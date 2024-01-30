@@ -9,6 +9,49 @@
   --glow-rgb: 239 42 201;
 }
 
+.container p {
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.container p span.typed-text {
+  font-weight: bold;
+  color: var(--background);
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -43,15 +86,35 @@ img {
 .statMBD,
 .perMBD,
 .perMisMBD,
-.tanimbar {
+.tanimbar,
+.Bursel,
+.indikatorbursel,
+.statSBT,
+.persenSBT {
   width: 50%;
 }
 
+.container-judul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .judul {
+  letter-spacing: 0.1rem;
   text-align: center;
   margin-bottom: 4rem;
   font-size: 2rem;
   color: white;
+  width: 65%;
+}
+
+.judul .si {
+  color: var(--background);
+}
+
+.judul .d {
+  color: chartreuse;
 }
 
 .judul span {
@@ -62,6 +125,12 @@ img {
   text-decoration: underline;
   text-decoration-color: var(--background);
   color: var(--background);
+}
+
+.si,
+.d {
+  text-decoration: underline;
+  text-decoration-color: var(--background);
 }
 
 .judul1 {
@@ -235,4 +304,8 @@ li {
   overflow-x: auto;
   width: calc(100% - 1rem);
   white-space: nowrap;
+}
+
+.container-end {
+  text-align: center;
 }
