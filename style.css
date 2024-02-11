@@ -62,36 +62,8 @@ a {
   text-decoration: underline;
 }
 
-sup {
-  vertical-align: super;
-  font-size: small;
-}
-
 img {
   width: 100%;
-}
-
-.administrasi,
-.tahukah1,
-.indikator,
-.tahukah,
-.persentase,
-.kecamatan,
-.kependudukan,
-.piramida,
-.ketenagakerjaan,
-.bekerja,
-.mbd,
-.jumMBD,
-.statMBD,
-.perMBD,
-.perMisMBD,
-.tanimbar,
-.Bursel,
-.indikatorbursel,
-.statSBT,
-.persenSBT {
-  width: 50%;
 }
 
 .container-judul {
@@ -163,7 +135,7 @@ body .folder {
   margin: 1rem auto;
   max-width: 55rem;
   width: 100%;
-  scrollbar-height: none;
+  /* scrollbar-height: none; */
   /* Firefox */
   -ms-overflow-style: none;
   /* IE 10+ */
@@ -304,8 +276,4 @@ li {
   overflow-x: auto;
   width: calc(100% - 1rem);
   white-space: nowrap;
-}
-
-.container-end {
-  text-align: center;
 }
